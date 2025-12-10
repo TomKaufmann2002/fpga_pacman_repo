@@ -20,6 +20,10 @@ This version includes:
 
 
 
+Created by \*\*Tom Kaufmann \& Yotam Effroni\*\*
+
+
+
 More documentation, screenshots, and a video demo will be added soon.
 
 
