@@ -1,0 +1,198 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 320 304)
+	(text "TOP_GAME_CONTROL" (rect 5 0 140 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 267 24 284)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 37 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 21 43 59 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "dr_prio_reg[19..0]" (rect 0 0 108 19)(font "Intel Clear" (font_size 8)))
+		(text "dr_prio_reg[19..0]" (rect 21 59 129 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pdots_exist" (rect 0 0 68 19)(font "Intel Clear" (font_size 8)))
+		(text "pdots_exist" (rect 21 75 89 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "edots_exist" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "edots_exist" (rect 21 91 88 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "hundreds[3..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "hundreds[3..0]" (rect 21 107 107 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "start_of_frame" (rect 0 0 88 19)(font "Intel Clear" (font_size 8)))
+		(text "start_of_frame" (rect 21 123 109 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "init_live_count[2..0]" (rect 0 0 116 19)(font "Intel Clear" (font_size 8)))
+		(text "init_live_count[2..0]" (rect 21 139 137 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "game_started" (rect 0 0 82 19)(font "Intel Clear" (font_size 8)))
+		(text "game_started" (rect 21 155 103 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "thousands[3..0]" (rect 0 0 90 19)(font "Intel Clear" (font_size 8)))
+		(text "thousands[3..0]" (rect 21 171 111 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "is_rg_alive" (rect 0 0 63 19)(font "Intel Clear" (font_size 8)))
+		(text "is_rg_alive" (rect 220 27 283 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(port
+		(pt 304 48)
+		(output)
+		(text "remove_cur_pdot" (rect 0 0 105 19)(font "Intel Clear" (font_size 8)))
+		(text "remove_cur_pdot" (rect 178 43 283 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 48)(pt 288 48))
+	)
+	(port
+		(pt 304 64)
+		(output)
+		(text "remove_cur_edot" (rect 0 0 103 19)(font "Intel Clear" (font_size 8)))
+		(text "remove_cur_edot" (rect 180 59 283 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 64)(pt 288 64))
+	)
+	(port
+		(pt 304 80)
+		(output)
+		(text "ate_pdot" (rect 0 0 54 19)(font "Intel Clear" (font_size 8)))
+		(text "ate_pdot" (rect 229 75 283 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 80)(pt 288 80))
+	)
+	(port
+		(pt 304 96)
+		(output)
+		(text "game_mode[3..0][1..0]" (rect 0 0 135 19)(font "Intel Clear" (font_size 8)))
+		(text "game_mode[3..0][1..0]" (rect 148 91 283 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 96)(pt 288 96)(line_width 3))
+	)
+	(port
+		(pt 304 112)
+		(output)
+		(text "game_status" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "game_status" (rect 208 107 283 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 112)(pt 288 112))
+	)
+	(port
+		(pt 304 128)
+		(output)
+		(text "lost_life" (rect 0 0 47 19)(font "Intel Clear" (font_size 8)))
+		(text "lost_life" (rect 236 123 283 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 128)(pt 288 128))
+	)
+	(port
+		(pt 304 144)
+		(output)
+		(text "lives[2..0]" (rect 0 0 57 19)(font "Intel Clear" (font_size 8)))
+		(text "lives[2..0]" (rect 226 139 283 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 144)(pt 288 144)(line_width 3))
+	)
+	(port
+		(pt 304 160)
+		(output)
+		(text "ate_edot" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "ate_edot" (rect 230 155 283 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 160)(pt 288 160))
+	)
+	(port
+		(pt 304 176)
+		(output)
+		(text "is_pg_alive" (rect 0 0 67 19)(font "Intel Clear" (font_size 8)))
+		(text "is_pg_alive" (rect 216 171 283 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 176)(pt 288 176))
+	)
+	(port
+		(pt 304 192)
+		(output)
+		(text "is_cg_alive" (rect 0 0 64 19)(font "Intel Clear" (font_size 8)))
+		(text "is_cg_alive" (rect 219 187 283 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 192)(pt 288 192))
+	)
+	(port
+		(pt 304 208)
+		(output)
+		(text "is_og_alive" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
+		(text "is_og_alive" (rect 217 203 283 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 208)(pt 288 208))
+	)
+	(port
+		(pt 304 224)
+		(output)
+		(text "is_eating" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "is_eating" (rect 230 219 283 238)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 224)(pt 288 224))
+	)
+	(port
+		(pt 304 240)
+		(output)
+		(text "is_pm_alive" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "is_pm_alive" (rect 212 235 283 254)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 240)(pt 288 240))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 272))
+	)
+)
