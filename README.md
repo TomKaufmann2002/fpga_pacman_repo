@@ -20,7 +20,7 @@ A hardware implementation of the classic Pac-Man game written in SystemVerilog a
 
 
 ## Demonstration:
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=fAgSB6om3eE" frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
+[![Project demonstration](https://img.youtube.com/vi/fAgSB6om3eE/maxresdefault.jpg)](https://www.youtube.com/watch?v=fAgSB6om3eE)
 
 
 More documentation and screenshots,
