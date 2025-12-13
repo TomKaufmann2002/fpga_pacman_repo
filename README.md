@@ -23,7 +23,4 @@ A hardware implementation of the classic Pac-Man game written in SystemVerilog a
 [![Project demonstration](https://img.youtube.com/vi/fAgSB6om3eE/maxresdefault.jpg)](https://www.youtube.com/watch?v=fAgSB6om3eE)
 
 
-More documentation and screenshots,
-
-
 Created by **Tom Kaufmann & Yotam Efroni**
